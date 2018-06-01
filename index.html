@@ -1,18 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
 
-  <body>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
+<body>
 
-    <script src="assets/js/app.js"></script>
-  </body>
+  <div class="mainHeader">
+    <div>
+      <a href="#"><i class="code icon"></i> I can code</a>
+    </div>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="ui container">
+    <div id="about" class="sections">
+      <h1 class="hText">About me</h1>
+      <p>I am absolutely dedicated by web development and programming. I am a kind of beginner but I am enjoying learning new
+        skills, which I see as a key component to my future success. I started my journey on the
+        <a href="https://codecademy.com">Codecademy</a> website. At the beginning it was only a hobby and it is remained in the same position for a couple
+        of years as I did not have time to learn next to my job. Later I realized I want to do something more in this industry
+        as I have fallen in
+        <i class="fa fa-heart" aria-hidden="true"></i> with Web Development, so I joined
+        <a href="https://freecodecamp.org">FreeCodeCamp</a> as well. I've already learned so much and am excited for what lies ahead.</p>
+
+      <p>I made this website using
+        <a href="https://semantic-ui.com/">Semantic UI</a> as it is responsive and simple,
+        <a href="http://http://fontawesome.io/">Font-Awesome</a>
+        <!-- and a bit of <a href="http://jquery.com">jQuery</a> and <a href="http://javascript.com">JavaScript</a> too.-->I added in Google Fonts to present some nice fonts.</p>
+
+      <p>I was encouraged to use the Read-Search-Ask method from the
+        <a href="http://freeCodeCamp.org">freeCodeCamp</a> and managed to put all of this together just using Read and Search! I found websites such as Stackoverflow
+        invaluable. Most of the questions I had was already answered.</p>
+
+      <p>I am learning JavaScript at the moment by
+        <a href="http://udemy.com">Udemy</a> and
+        <a href="http://freecodecamp.org">FreeCodeCamp</a>. My target is to become a Full Stack Web Developer or more but no less!</p>
+    </div>
+
+    <hr>
+
+    <div id="portfolio" class="sections">
+      <h1 class="hText">Portfolio</h1>
+      <div class="ui link cards">
+        <div class="card">
+          <div class="image">
+            <img src="assets/media/My_Weather_App.jpg">
+          </div>
+          <div class="content">
+            <div class="header">My Weather App</div>
+            <div class="meta">
+              <a href="https://casee8.github.io/My-Weather-App/">Check it out here!</a>
+            </div>
+            <div class="description">
+              This is my first app, published on Github. Built using Google API and Weather Underground API. There are plenty of features
+              I am working on at the moment.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="assets/media/My_Weather_App.jpg">
+          </div>
+          <div class="content">
+            <div class="header">My Weather App</div>
+            <div class="meta">
+              <a href="https://casee8.github.io/My-Weather-App/">Check it out here!</a>
+            </div>
+            <div class="description">
+              This is my first app, published on Github. Built using Google API and Weather Underground API. There are plenty of features
+              I am working on at the moment.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="assets/media/My_Weather_App.jpg">
+          </div>
+          <div class="content">
+            <div class="header">My Weather App</div>
+            <div class="meta">
+              <a href="https://casee8.github.io/My-Weather-App/">Check it out here!</a>
+            </div>
+            <div class="description">
+              This is my first app, published on Github. Built using Google API and Weather Underground API. There are plenty of features
+              I am working on at the moment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="contact" class="sections">
+      <h1 class="hText">Contact</h1>
+      <div class="contactLogos">
+        <a href="https://github.com/casee8"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/zsolt-kaszas-7b8133115/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:example@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://use.fontawesome.com/952a1e84fe.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
 
 </html>

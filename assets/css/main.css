@@ -1,3 +1,64 @@
-body {
-  background: blue;
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+
+/* ================== Header/Navbar ================== */
+
+.mainHeader {
+  margin: 0 0 auto 0;
+  padding: 8em 0 6em 0;
+  text-align: center;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1),
+              0 2px rgba(0, 0, 0, 0.1),
+              0 3px rgba(0, 0, 0, 0.1),
+              0 4px rgba(0, 0, 0, 0.1),
+              0 5px rgba(0, 0, 0, 0.1),
+              0 6px rgba(0, 0, 0, 0.1);
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body > div.mainHeader > div > a, body > div.mainHeader > a {
+  color: white;
+}
+
+body > div.mainHeader > div > a {
+  font-size: 8em;
+  padding-bottom: 2em;
+}
+
+body > div.mainHeader > a {
+  padding: 2em;
+  margin: auto;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2em;
+}
+
+/* ================== About ================== */
+p {
+  font-size: 1.5em;
+}
+
+.hText {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 4em;
+  text-align: center;
+  margin: 1.5em;
+}
+
+.sections {
+  margin: 7em;
+}
+
+/* ================== Portfolio ================== */
+
+
+/* ================== Contact ================== */
+
+#contact > div > a {
+  font-size: 4em;
+}
+
+.contactLogos {
+  display: flex;
+  justify-content: space-between;
 }
