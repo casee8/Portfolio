@@ -5,21 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
 
+  <title>Zsolt Kaszas - Portfolio</title>
+
+  <!-- Normalize -->
+  <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+  <!-- Semantic UI -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- My Styling -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
 <body>
 
-  <div class="mainHeader">
+  <div id="header" class="mainHeader">
     <div>
       <a href="#"><i class="code icon"></i> I can code</a>
     </div>
     <a href="#about">About</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
+  </div>
+
+  <div class="fixedSHeader">
+    <div>
+      <a href="#" class="fixedHome"><i class="code icon"></i> I can code</a>
+    </div>
+    <a href="#about" class="fixedNav">About</a>
+    <a href="#portfolio" class="fixedNav">Portfolio</a>
+    <a href="#contact" class="fixedNav">Contact</a>
   </div>
 
   <div class="ui container">
@@ -48,7 +62,7 @@
     </div>
 
     <hr>
-
+    
     <div id="portfolio" class="sections">
       <h1 class="hText">Portfolio</h1>
       <div class="ui link cards">
@@ -114,6 +128,7 @@
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/952a1e84fe.js"></script>
   <script src="assets/js/app.js"></script>
 </body>

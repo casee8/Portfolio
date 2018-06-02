@@ -2,9 +2,15 @@
 
 /* ================== Header/Navbar ================== */
 
+body {
+  z-index: 0;
+}
+
 .mainHeader {
+  z-index: 2;
+  position: relative;
   margin: 0 0 auto 0;
-  padding: 8em 0 6em 0;
+  padding: 7em 0 5em 0;
   text-align: center;
   box-shadow: 0 1px rgba(0, 0, 0, 0.1),
               0 2px rgba(0, 0, 0, 0.1),
@@ -33,6 +39,41 @@ body > div.mainHeader > a {
   font-size: 2em;
 }
 
+/* ================== Fixed Header/Navbar ================== */
+
+.fixedSHeader {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1),
+              0 2px rgba(0, 0, 0, 0.1),
+              0 3px rgba(0, 0, 0, 0.1),
+              0 4px rgba(0, 0, 0, 0.1),
+              0 5px rgba(0, 0, 0, 0.1),
+              0 6px rgba(0, 0, 0, 0.1);
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+body > div.fixedSHeader > div > a, body > div.fixedSHeader > a {
+  color: white;
+}
+
+.fixedNav {
+  padding: 0.5em;
+  float: right;
+  font-size: 1.3em;
+}
+
+.fixedHome {
+  padding: 0.5em;
+  float: left;
+  font-size: 1.3em;
+}
+
 /* ================== About ================== */
 p {
   font-size: 1.5em;
@@ -56,6 +97,7 @@ p {
 
 #contact > div > a {
   font-size: 4em;
+  color: #000000;
 }
 
 .contactLogos {
