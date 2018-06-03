@@ -6,6 +6,10 @@ body {
   z-index: 0;
 }
 
+body > div.ui.container {
+  background: rgb(244, 255, 240);
+}
+
 .mainHeader {
   z-index: 2;
   position: relative;
@@ -24,7 +28,7 @@ body {
 }
 
 body > div.mainHeader > div > a, body > div.mainHeader > a {
-  color: white;
+  color: #fff;
 }
 
 body > div.mainHeader > div > a {
@@ -53,13 +57,13 @@ body > div.mainHeader > a {
               0 4px rgba(0, 0, 0, 0.1),
               0 5px rgba(0, 0, 0, 0.1),
               0 6px rgba(0, 0, 0, 0.1);
-  background: #000000;
+  background: #000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
 }
 
 body > div.fixedSHeader > div > a, body > div.fixedSHeader > a {
-  color: white;
+  color: #fff;
 }
 
 .fixedNav {
@@ -83,7 +87,14 @@ p {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 4em;
   text-align: center;
-  margin: 1.5em;
+  margin: 0 0 1.5em 0;
+}
+
+.sText {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
 }
 
 .sections {
@@ -93,14 +104,49 @@ p {
 /* ================== Portfolio ================== */
 
 
+.workLinks {
+  margin-top: 1.5em;
+}
+
 /* ================== Contact ================== */
 
 #contact > div > a {
   font-size: 4em;
-  color: #000000;
+  color: #000;
 }
 
-.contactLogos {
+.logos {
   display: flex;
   justify-content: space-between;
+}
+
+#about > div:nth-child(8) > img {
+  height: 100px;
+  width: 100px;
+  margin: auto 2em;
+}
+
+#about > div:nth-child(10) > img {
+  height: 75px;
+  width: 160px;
+  margin: auto 2em;
+}
+
+.placeholder {
+  height: 30px;
+}
+
+footer > div > a > i {
+  font-size: 4em;
+  color: #fff;
+  padding: 0.3em;
+}
+
+footer {
+  color: #fff;
+  font-size: 0.7em;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  text-align: center;
 }

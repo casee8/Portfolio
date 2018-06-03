@@ -12,6 +12,9 @@
   <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
   <!-- Semantic UI -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <!-- My Styling -->
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -20,7 +23,8 @@
 
   <div id="header" class="mainHeader">
     <div>
-      <a href="#"><i class="code icon"></i> I can code</a>
+      <a href="#">
+        <i class="code icon"></i> I can code</a>
     </div>
     <a href="#about">About</a>
     <a href="#portfolio">Portfolio</a>
@@ -29,41 +33,77 @@
 
   <div class="fixedSHeader">
     <div>
-      <a href="#" class="fixedHome"><i class="code icon"></i> I can code</a>
+      <a href="#" class="fixedHome">
+        <i class="code icon"></i> I can code</a>
     </div>
-    <a href="#about" class="fixedNav">About</a>
-    <a href="#portfolio" class="fixedNav">Portfolio</a>
     <a href="#contact" class="fixedNav">Contact</a>
+    <a href="#portfolio" class="fixedNav">Portfolio</a>
+    <a href="#about" class="fixedNav">About</a>    
   </div>
 
   <div class="ui container">
     <div id="about" class="sections">
+      <div class="placeholder"></div>
       <h1 class="hText">About me</h1>
-      <p>I am absolutely dedicated by web development and programming. I am a kind of beginner but I am enjoying learning new
-        skills, which I see as a key component to my future success. I started my journey on the
-        <a href="https://codecademy.com">Codecademy</a> website. At the beginning it was only a hobby and it is remained in the same position for a couple
+      <p>
+        <strong>Hi!</strong> My name is Zsolt. I'm a self-taught web developer. I am absolutely dedicated by programming. I am a
+        kind of beginner but I am enjoying learning new skills, which I see as a key component to my future success. I started
+        my journey on the
+        <a href="https://codecademy.com" target="_blank">Codecademy</a> website. At the beginning it was only a hobby and it is remained in the same position for a couple
         of years as I did not have time to learn next to my job. Later I realized I want to do something more in this industry
         as I have fallen in
         <i class="fa fa-heart" aria-hidden="true"></i> with Web Development, so I joined
-        <a href="https://freecodecamp.org">FreeCodeCamp</a> as well. I've already learned so much and am excited for what lies ahead.</p>
+        <a href="https://freecodecamp.org" target="_blank">FreeCodeCamp</a> as well. I've already learned so much and am excited for what lies ahead.
+      </p>
 
-      <p>I made this website using
-        <a href="https://semantic-ui.com/">Semantic UI</a> as it is responsive and simple,
-        <a href="http://http://fontawesome.io/">Font-Awesome</a>
-        <!-- and a bit of <a href="http://jquery.com">jQuery</a> and <a href="http://javascript.com">JavaScript</a> too.-->I added in Google Fonts to present some nice fonts.</p>
+      <p>
+        I made this website using
+        <a href="https://semantic-ui.com/" target="_blank">Semantic UI</a> as it is responsive and simple,
+        <a href="http://http://fontawesome.io/" target="_blank">Font-Awesome</a>
+        <!-- and a bit of <a href="http://jquery.com">jQuery</a> and <a href="http://javascript.com">JavaScript</a> too.-->and I added in Google Fonts to present some nice fonts.
+      </p>
 
-      <p>I was encouraged to use the Read-Search-Ask method from the
-        <a href="http://freeCodeCamp.org">freeCodeCamp</a> and managed to put all of this together just using Read and Search! I found websites such as Stackoverflow
-        invaluable. Most of the questions I had was already answered.</p>
+      <p>
+        I was encouraged to use the Read-Search-Ask method from the
+        <a href="http://freeCodeCamp.org" target="_blank">freeCodeCamp</a> and managed to put all of this together just using Read and Search! I found websites such as Stackoverflow
+        invaluable. Most of the questions I had was already answered.
+      </p>
 
-      <p>I am learning JavaScript at the moment by
-        <a href="http://udemy.com">Udemy</a> and
-        <a href="http://freecodecamp.org">FreeCodeCamp</a>. My target is to become a Full Stack Web Developer or more but no less!</p>
+      <p>
+        I am learning JavaScript, NodeJS, Express, Mongo database at the moment by
+        <a href="http://udemy.com" target="_blank">Udemy</a> and
+        <a href="http://freecodecamp.org" target="_blank">FreeCodeCamp</a>. My target is to become a
+        <strong>Full Stack Web Developer</strong> or more but no less!
+      </p>
+
+      <div>
+        <h1 class="sText">My current Front-End Stack:</h1>
+      </div>
+
+      <div class="logos">
+        <img src="assets/media/HTML5.png" alt="HTML5">
+        <img src="assets/media/CSS3.png" alt="CSS3">
+        <img src="assets/media/jQuery.png" alt="jQuery">
+        <img src="assets/media/JavaScript.png" alt="JavaScript">
+      </div>
+
+      <div>
+        <h1 class="sText">Back-End Stack:</h1>
+      </div>
+
+      <div class="logos">
+        <img src="assets/media/nodeJS.png" alt="nodeJS">
+        <img src="assets/media/expressJS.png" alt="expressJS">
+        <img src="assets/media/mongoDB.png" alt="mongoDB">
+        <img src="assets/media/mongoose.jpg" alt="mongoose">
+      </div>
+
     </div>
 
     <hr>
-    
+
     <div id="portfolio" class="sections">
+      <div class="placeholder"></div>
       <h1 class="hText">Portfolio</h1>
       <div class="ui link cards">
         <div class="card">
@@ -73,7 +113,7 @@
           <div class="content">
             <div class="header">My Weather App</div>
             <div class="meta">
-              <a href="https://casee8.github.io/My-Weather-App/">Check it out here!</a>
+              <a href="https://casee8.github.io/My-Weather-App/" target="_blank">Check it out here!</a>
             </div>
             <div class="description">
               This is my first app, published on Github. Built using Google API and Weather Underground API. There are plenty of features
@@ -84,52 +124,74 @@
 
         <div class="card">
           <div class="image">
-            <img src="assets/media/My_Weather_App.jpg">
+            <img src="assets/media/keyboard.jpg">
           </div>
           <div class="content">
-            <div class="header">My Weather App</div>
+            <div class="header">Circles</div>
             <div class="meta">
-              <a href="https://casee8.github.io/My-Weather-App/">Check it out here!</a>
+              <a href="https://casee8.github.io/Circles/" target="_blank">Check it out here!</a>
             </div>
             <div class="description">
-              This is my first app, published on Github. Built using Google API and Weather Underground API. There are plenty of features
-              I am working on at the moment.
+              I built this little fun app with Colt Steele - great teacher! I am planning to upgrade it by time. All you need is your keyboard.
             </div>
           </div>
         </div>
 
         <div class="card">
           <div class="image">
-            <img src="assets/media/My_Weather_App.jpg">
+            <img src="assets/media/colorGame.jpg">
           </div>
           <div class="content">
-            <div class="header">My Weather App</div>
+            <div class="header">The Great Color Game</div>
             <div class="meta">
-              <a href="https://casee8.github.io/My-Weather-App/">Check it out here!</a>
+              <a href="https://casee8.github.io/colorGame/" target="_blank">Check it out here!</a>
             </div>
             <div class="description">
-              This is my first app, published on Github. Built using Google API and Weather Underground API. There are plenty of features
-              I am working on at the moment.
+              Which color is matching the given RGB color code??
+              <br> Develop your color coding skill.
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="workLinks">
+        <p>You can find more apps built by myself on the
+          <a href="https://codepen.io/casee8/" target="_blank">Codepen website</a> and on
+          <a href="https://ide.c9.io/casee/bugfinder" target="_blank">C9</a>. </p>
+        <p>/ In order to check my works out on C9, unfortunately you sould register to the site or you can open the
+          <a href="https://bugfinder-casee.c9users.io" target="_blank">
+          running application's link</a> directly but I have to fire up the server and database first. /</p>
       </div>
     </div>
 
     <hr>
 
     <div id="contact" class="sections">
+      <div class="placeholder"></div>
       <h1 class="hText">Contact</h1>
-      <div class="contactLogos">
-        <a href="https://github.com/casee8"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/zsolt-kaszas-7b8133115/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="mailto:example@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <div class="logos">
+        <a href="https://github.com/casee8" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zsolt-kaszas-7b8133115/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:icancode.casee@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/952a1e84fe.js"></script>
+  <footer>
+    <div>
+      <a href="#top"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
+    <p>&copy; 2018 - Zsolt Kaszas <br> You can view the github repository for this project <a href="https://github.com/casee8/Portfolio">here</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>
 </body>
 
