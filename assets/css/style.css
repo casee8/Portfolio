@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Roboto+Condensed:300');
+
+/* ================== Main nav ================== */
+
+.mainHeader {
+  z-index: 2;
+  position: relative;
+  margin: 0 0 auto 0;
+  height: 200px;
+  text-align: center;
+  box-shadow: 20px 0 40px rgba(0,0,0,0.9);
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body > div.mainHeader > div:first-child > a {
+  font-size: 5em;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+body > div.mainHeader > div:nth-child(2) > a {
+  font-size: 1.7em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+body > div.mainHeader > div:nth-child(1) > a > i.fas.fa-window-minimize {
+  font-size: 0.5em;
+}
+
+/* ================== Fixed Header/Navbar ================== */
+
+.fixedSHeader {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 20px 0 40px rgba(0,0,0,0.9);
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.fixedNav {
+  padding: 0.5em;
+  float: right;
+  font-size: 1.3em;
+}
+
+.fixedHome {
+  padding: 0.5em;
+  float: left;
+  font-size: 1.3em;
+}
+
+/* ================== All the selected elements ================== */
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: 2em auto;
+  background: rgb(244, 255, 240);
+  box-shadow: 10px 0 40px rgba(0,0,0,0.3)
+}
+
+.text { 
+  font-size: 1.5em;
+  margin: auto 1em;
+}
+
+.hText {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 4em;
+  text-align: center;
+  padding: 1.5em;
+  margin: 0;
+}
+
+.stackText {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 1.5em;
+}
+
+hr {
+  margin-top: 3em;
+}
+
+#about > div:nth-child(8) > div > img {
+  height: 80px;
+  width: 80px;
+  margin: 1em;
+}
+
+#about > div:nth-child(10) > div > img {
+  height: 70px;
+  width: 140px;
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #1e70bf;
+}
+
+/* ================== Contact ================== */
+
+#contact > div > a {
+  font-size: 4em;
+  color: #000;
+}
+
+#contact > div > a > i:hover {
+  transform: scale(1.5) rotate(360deg);
+  transition-duration: 600ms;
+}
+
+#contact > div > a > i {
+  text-decoration: none;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 3em;
+}
+
+/* ================== Footer ================== */
+
+footer > div > a > i {
+  font-size: 2em;
+  color: #fff;
+  padding: 0.2em;
+}
+
+footer {
+  color: #fff;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  text-align: center;
+}
+
+body > footer > p {
+  margin-bottom: 0;
+  padding: 0 0.5em 0.5em 0.5em;
+  font-size: 0.9em;
+}
+
+/* ================== Links in dark area ================== */
+
+body > div.mainHeader > div > a, body > div.mainHeader > a, body > footer > p > a, body > div.fixedSHeader > div > a, body > div.fixedSHeader > a {
+  color: #fff;
+  
+}
+
+body > div.mainHeader > div > a:hover, body > div.mainHeader > a:hover, body > footer > p > a:hover, body > div.fixedSHeader > a:hover, body > div.fixedSHeader > div > a:hover, a:hover {
+  color: #1e70bf;
+  text-decoration: none;
+}
+
+body > div.mainHeader > div > a:focus, body > div.mainHeader > a:focus, body > footer > p > a:focus, body > div.fixedSHeader > a:focus, body > div.fixedSHeader > div > a:focus, a:focus {
+  text-decoration: none;
+}
