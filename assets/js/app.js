@@ -23,7 +23,7 @@ $('.contact').on('click', function(){
   }, 500);
 });
 
-$('.fa-chevron-circle-up').on('click', function(){
+$('.goTop').on('click', function(){
   const pageTop = $('.pageTop').position().top;
 
   $('html, body').animate({
