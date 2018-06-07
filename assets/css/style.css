@@ -14,11 +14,12 @@
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-body > div.mainHeader > div:first-child > a {
+body > div.mainHeader > div.pageTop {
   font-size: 5em;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 body > div.mainHeader > div:nth-child(2) > a {
@@ -27,7 +28,7 @@ body > div.mainHeader > div:nth-child(2) > a {
   padding-right: 1em;
 }
 
-body > div.mainHeader > div:nth-child(1) > a > i.fas.fa-window-minimize {
+body > div.mainHeader > div.pageTop > i.fas.fa-window-minimize {
   font-size: 0.5em;
 }
 
@@ -157,16 +158,22 @@ body > footer > p {
 
 /* ================== Links in dark area ================== */
 
-body > div.mainHeader > div > a, body > div.mainHeader > a, body > footer > p > a, body > div.fixedSHeader > div > a, body > div.fixedSHeader > a {
+body > div.mainHeader > div > a, body > footer > p > a, body > div.fixedSHeader > div > a, body > div.fixedSHeader > a {
   color: #fff;
   
 }
 
-body > div.mainHeader > div > a:hover, body > div.mainHeader > a:hover, body > footer > p > a:hover, body > div.fixedSHeader > a:hover, body > div.fixedSHeader > div > a:hover, a:hover {
+body > div.mainHeader > div > a:hover, body > footer > p > a:hover, body > div.fixedSHeader > a:hover, body > div.fixedSHeader > div > a:hover, a:hover {
   color: #1e70bf;
   text-decoration: none;
 }
 
-body > div.mainHeader > div > a:focus, body > div.mainHeader > a:focus, body > footer > p > a:focus, body > div.fixedSHeader > a:focus, body > div.fixedSHeader > div > a:focus, a:focus {
+body > div.mainHeader > div > a:focus, body > footer > p > a:focus, body > div.fixedSHeader > a:focus, body > div.fixedSHeader > div > a:focus, a:focus {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .mainHeader {
+    display: none;
+  }
 }
