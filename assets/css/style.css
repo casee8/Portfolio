@@ -20,6 +20,9 @@ body > div.mainHeader > div.pageTop {
   margin-top: 35px;
   margin-bottom: 20px;
   color: #fff;
+  width: 381px;
+  height: 100px;
+  text-align: left;
 }
 
 body > div.mainHeader > div:nth-child(2) > a {

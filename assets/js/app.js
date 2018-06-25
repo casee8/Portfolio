@@ -1,4 +1,5 @@
-// Animate smooth scroll | not really a DRY code...
+// Animate smooth scroll
+
 $(".about").on('click', function(){
   const about = $('#about').position().top;
 
@@ -30,6 +31,23 @@ $('.goTop').on('click', function(){
     scrollTop: pageTop
   }, 300);
 });
+
+// Terminal style header
+
+let strTitle = " I can code";
+let strTitleArray = strTitle.split(""); 
+let loopTimer;
+
+function frameLooper(){
+  if (strTitleArray.length > 0) {
+    document.querySelector("#strTitlePlace").innerText += strTitleArray.shift();
+  } else {
+    clearTimeout(loopTimer);
+    return false;
+  }
+  loopTimer = setTimeout("frameLooper()", 170);
+}
+frameLooper();
 
 // Blinking cursor
 
