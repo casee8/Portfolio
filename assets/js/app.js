@@ -30,3 +30,16 @@ $('.goTop').on('click', function(){
     scrollTop: pageTop
   }, 300);
 });
+
+// Blinking cursor
+
+let cursorBlink = document.querySelectorAll(".cursor");
+
+setInterval(cursorBlinking, 600);
+
+function cursorBlinking(){
+  for(let i = 0; i < cursorBlink.length; i++){
+    cursorBlink[i].classList.toggle("blink");
+  }
+}
+

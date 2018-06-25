@@ -32,6 +32,18 @@ body > div.mainHeader > div.pageTop > i.fas.fa-window-minimize {
   font-size: 0.5em;
 }
 
+.fCursor {
+  font-size: 0.7em;
+}
+
+.cursor {
+  transition-duration: 200ms;
+}
+
+.blink {
+  opacity: 0;
+}
+
 /* ================== Fixed Header/Navbar ================== */
 
 .fixedSHeader {
