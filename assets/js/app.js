@@ -45,7 +45,7 @@ function frameLooper(){
     clearTimeout(loopTimer);
     return false;
   }
-  loopTimer = setTimeout("frameLooper()", 170);
+  loopTimer = setTimeout("frameLooper()", 100);
 }
 frameLooper();
 
