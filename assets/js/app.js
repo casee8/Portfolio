@@ -1,13 +1,5 @@
 // Animate smooth scroll
 
-$(".about").on('click', function(){
-  const about = $('#about').position().top;
-
-  $('html, body').animate({
-    scrollTop: about
-  }, 500);
-});
-
 $(".portfolio").on('click', function(){
   const portfolio = $('#portfolio').position().top;
 
@@ -51,7 +43,7 @@ frameLooper();
 
 // Blinking cursor
 
-let cursorBlink = document.querySelectorAll(".cursor");
+const cursorBlink = document.querySelectorAll(".cursor");
 
 setInterval(cursorBlinking, 600);
 
