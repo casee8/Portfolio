@@ -129,6 +129,11 @@ a {
 
 /* ================== Contact ================== */
 
+#pph-hireme {
+  width: 300px;
+  margin: auto auto 2em auto;
+}
+
 #contact > div > a {
   font-size: 4em;
   color: #000;
